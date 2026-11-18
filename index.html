@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071321">
+  <meta name="description" content="ELMERALD is an independent music label and creative platform championing artistic freedom, individuality and possibilities. Founded in Kenya by Elmelda Nyaboke Oiriga.">
+  <meta property="og:title" content="ELMERALD — A Home for Artistic Freedom">
+  <meta property="og:description" content="Different voices. Individual stories. One creative home.">
+  <meta property="og:image" content="assets/elmerald-logo.png">
+  <title>ELMERALD | A Home for Artistic Freedom</title>
+  <link rel="icon" type="image/png" href="assets/elmerald-logo.png">
+  <style>
+    :root{--ink:#071321;--ink2:#0b1b2d;--panel:#10253a;--cyan:#75eaff;--blue:#37bde8;--purple:#b18cff;--white:#f5f8fc;--muted:#a9bacb;--line:rgba(139,218,245,.17);--max:1160px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--ink);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7}
+    a{color:inherit;text-decoration:none} img{max-width:100%;display:block} .wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+    .topline{height:3px;background:linear-gradient(90deg,#39bfe8,#9cefff,#9e7aff,#39bfe8)}
+    header{position:sticky;top:0;z-index:10;background:rgba(7,19,33,.91);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-family:Georgia,serif;letter-spacing:.2em;font-size:19px}.brand img{width:48px;height:48px;object-fit:contain;border-radius:50%}
+    nav{display:flex;align-items:center;gap:25px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#d1deea}nav a:hover,.socials a:hover{color:var(--cyan)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(117,234,255,.6);padding:11px 18px;border-radius:2px;color:var(--cyan);font-size:11px;letter-spacing:.14em;text-transform:uppercase;transition:.2s}
+    .nav-cta:hover,.btn:hover{background:var(--cyan);color:var(--ink)}
+    .hero{position:relative;overflow:hidden;min-height:690px;display:grid;align-items:center;background:radial-gradient(ellipse at 78% 45%,rgba(35,137,184,.19),transparent 34%),radial-gradient(ellipse at 15% 80%,rgba(121,84,191,.13),transparent 33%),linear-gradient(135deg,#071321,#091b2e 60%,#071321)}
+    .hero:before{content:"";position:absolute;width:640px;height:640px;border:1px solid rgba(117,234,255,.14);border-radius:50%;right:-190px;top:40px;box-shadow:0 0 80px rgba(55,189,232,.07),inset 0 0 80px rgba(55,189,232,.04)}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px;padding:82px 0}
+    .eyebrow{color:var(--cyan);font-size:11px;letter-spacing:.28em;text-transform:uppercase;font-weight:600}.hero h1{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(48px,6vw,82px);line-height:1.05;letter-spacing:-.035em;margin:20px 0}.hero h1 span{color:var(--cyan);font-style:italic}.hero p{color:#bdcad7;max-width:560px;font-size:17px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.btn.primary{background:var(--cyan);color:var(--ink);font-weight:700}.hero-art{display:flex;justify-content:center;align-items:center}.hero-art img{width:min(100%,470px);filter:drop-shadow(0 0 42px rgba(58,183,226,.13));mix-blend-mode:screen}
+    .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#091827}.strip .wrap{display:flex;justify-content:space-between;gap:22px;padding:19px 0;flex-wrap:wrap}.strip span{color:#c0d0de;font-size:10px;letter-spacing:.2em;text-transform:uppercase}.strip b{color:var(--cyan);font-weight:500}
+    section{padding:105px 0}.section-head{max-width:720px;margin-bottom:46px}.kicker{color:var(--cyan);text-transform:uppercase;letter-spacing:.23em;font-size:10px;font-weight:700}.section-head h2{font:400 clamp(36px,4vw,54px)/1.15 Georgia,serif;margin:13px 0 17px}.section-head p{color:var(--muted);margin:0;font-size:16px}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.story-copy p{color:#b6c5d3;margin:0 0 18px}.quote{font:italic 25px/1.45 Georgia,serif;color:#e8f7ff;border-left:2px solid var(--purple);padding:8px 0 8px 24px;margin:28px 0}
+    .feature-panel{background:linear-gradient(145deg,rgba(19,48,70,.9),rgba(10,27,44,.8));border:1px solid var(--line);padding:35px;position:relative}.feature-panel:after{content:"";position:absolute;right:0;top:0;width:80px;height:2px;background:linear-gradient(90deg,var(--cyan),var(--purple))}.feature-panel h3{font:400 28px Georgia,serif;margin:0 0 13px}.feature-panel p{color:var(--muted);margin:0}
+    .principles{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.principle{padding:24px 22px;border:1px solid var(--line);background:rgba(14,35,55,.55);min-height:190px}.principle .num{font:italic 22px Georgia,serif;color:var(--purple)}.principle h3{font:400 20px Georgia,serif;margin:13px 0 8px}.principle p{color:var(--muted);font-size:13px;margin:0}
+    .founder{background:linear-gradient(120deg,#0b1d30,#0b2335 55%,#101c36)}.founder-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:65px;align-items:center}.portrait{position:relative;max-width:430px;margin:auto}.portrait:before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid rgba(117,234,255,.35);z-index:0}.portrait img{position:relative;z-index:1;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 28%;filter:saturate(.88)}.founder-copy p{color:var(--muted)}.founder-name{font:400 30px Georgia,serif;margin:12px 0 2px}.role{color:var(--cyan);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+    .artist-card{display:grid;grid-template-columns:.8fr 1.2fr;max-width:900px;border:1px solid var(--line);background:linear-gradient(120deg,#10263a,#0b1b2d);overflow:hidden}.artist-photo{min-height:430px}.artist-photo img{height:100%;width:100%;object-fit:cover;object-position:center 23%}.artist-info{padding:48px;align-self:center}.artist-info h3{font:400 42px Georgia,serif;margin:8px 0}.artist-info .tag{color:var(--cyan);font-size:11px;letter-spacing:.18em;text-transform:uppercase}.artist-info p{color:var(--muted)}.socials{display:flex;gap:15px;flex-wrap:wrap;margin-top:25px;font-size:12px;color:#d4e6f2}.coming{margin-top:28px;padding-top:24px;border-top:1px solid var(--line);color:#9eb3c5;font:italic 18px Georgia,serif}
+    .music-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.music-card{padding:30px;border:1px solid var(--line);background:linear-gradient(145deg,#10273b,#0a1a2b);min-height:260px;display:flex;flex-direction:column}.music-card .type{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan)}.music-card h3{font:400 29px Georgia,serif;margin:20px 0 8px}.music-card p{color:var(--muted);font-size:14px;margin:0 0 25px}.music-card a{margin-top:auto;color:var(--cyan);font-size:11px;letter-spacing:.15em;text-transform:uppercase}.music-card a:hover{color:white}
+    .news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.news-item{padding:28px;border-top:1px solid var(--cyan);background:#0c2032}.news-item h3{font:400 23px Georgia,serif;margin:8px 0}.news-item p{color:var(--muted);font-size:14px;margin:0}.contact{background:radial-gradient(ellipse at 80% 30%,rgba(45,154,195,.15),transparent 40%),#091827;text-align:center}.contact .section-head{margin:0 auto 30px}.contact-mail{font:clamp(22px,4vw,36px) Georgia,serif;color:var(--cyan);overflow-wrap:anywhere}.contact .socials{justify-content:center;margin:28px 0}.footer{padding:30px 0;border-top:1px solid var(--line);color:#8096a9;font-size:11px}.footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer strong{color:#d5e5ef;letter-spacing:.18em}
+    @media(max-width:850px){nav{gap:13px}.nav-cta{display:none}.hero-grid,.two-col,.founder-grid{grid-template-columns:1fr;gap:35px}.hero{min-height:auto}.hero-grid{padding:75px 0}.hero-art img{width:min(80%,380px)}.principles{grid-template-columns:repeat(2,1fr)}.founder-grid{gap:45px}.portrait{max-width:360px}.artist-card{grid-template-columns:1fr 1fr}.artist-info{padding:30px}}
+    @media(max-width:600px){.wrap{width:min(var(--max),calc(100% - 32px))}.nav{height:70px}.brand{font-size:16px}.brand img{width:40px;height:40px}nav{max-width:62%;overflow-x:auto;white-space:nowrap;font-size:9px;gap:15px}.hero h1{font-size:49px}.hero p{font-size:15px}.strip .wrap{gap:12px}.strip span{font-size:8px}section{padding:76px 0}.principles,.music-grid,.news-grid{grid-template-columns:1fr}.principle{min-height:auto}.artist-card{grid-template-columns:1fr}.artist-photo{height:340px;min-height:0}.artist-info{padding:28px}.artist-info h3{font-size:36px}.footer .wrap{display:block}.footer span{display:block;margin-top:7px}}
+  </style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="ELMERALD home"><img src="assets/elmerald-logo.png" alt="ELMERALD emblem">ELMERALD</a>
+    <nav aria-label="Main navigation">
+      <a href="#story">Our Story</a><a href="#artists">Artists</a><a href="#music">Music</a><a href="#updates">Updates</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Independent music label · Kenya</div>
+        <h1>A home for<br><span>artistic freedom.</span></h1>
+        <p>A space for possibilities. We champion individuality, nurture creative voices and believe every artist deserves room to grow without losing who they are.</p>
+        <div class="hero-actions"><a class="btn primary" href="#artists">Meet our artist</a><a class="btn" href="#story">Discover ELMERALD</a></div>
+      </div>
+      <div class="hero-art"><img src="assets/elmerald-logo.png" alt="ELMERALD logo"></div>
+    </div>
+  </section>
+
+  <div class="strip"><div class="wrap"><span><b>01</b> Artistic freedom</span><span><b>02</b> Individuality</span><span><b>03</b> Creative ownership</span><span><b>04</b> Possibility beyond borders</span></div></div>
+
+  <section id="story">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Who we are</div><h2>Different voices.<br>One creative home.</h2><p>ELMERALD is an independent music label and creative platform built around a simple belief: artists should have the freedom to create, evolve and remain true to themselves.</p></div>
+      <div class="two-col">
+        <div class="story-copy">
+          <p>Founded by Elmelda Nyaboke Oiriga, an independent pop artist from Kenya, ELMERALD grew from the experience of navigating an artistic journey independently and recognising the need for a more supportive creative environment.</p>
+          <p>We want to create a place where artists are valued not only for their music, but also for who they are, what they represent and the stories they have to tell. A place where creativity is encouraged, identities are respected and growth does not require becoming someone else.</p>
+          <p>What began as an idea is growing into a vision for an independent music company that aims to discover, develop, support and empower creative talent, starting from Kenya and reaching beyond borders.</p>
+          <div class="quote">“ELMERALD is not built around one individual. It is built around the belief that every artist has something unique to bring into the world.”</div>
+        </div>
+        <div>
+          <div class="feature-panel"><div class="kicker">Our vision</div><h3>A music industry with room for everyone.</h3><p>To build a globally recognised independent music company that creates opportunities for artists, celebrates individuality and contributes to a music industry where creativity, artistic freedom and authenticity are valued.</p></div>
+          <div class="feature-panel" style="margin-top:16px"><div class="kicker">Our mission</div><h3>Support the artist. Protect the identity.</h3><p>To discover, nurture and support artists through a creative environment that encourages artistic freedom, individuality, professional growth, collaboration and responsible music management.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#091827" id="values">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">What guides us</div><h2>Our values</h2><p>The principles behind how we create, collaborate and grow.</p></div>
+      <div class="principles">
+        <article class="principle"><div class="num">01</div><h3>Artistic freedom</h3><p>Space to explore, make creative decisions and express without losing identity.</p></article>
+        <article class="principle"><div class="num">02</div><h3>Authenticity</h3><p>Originality, honesty and the confidence to show up as yourself.</p></article>
+        <article class="principle"><div class="num">03</div><h3>Empowerment</h3><p>Support and opportunities that help artists take ownership of their journeys.</p></article>
+        <article class="principle"><div class="num">04</div><h3>Respect</h3><p>Relationships grounded in trust, fairness and mutual understanding.</p></article>
+        <article class="principle"><div class="num">05</div><h3>Creativity</h3><p>Fresh ideas, new perspectives and the courage to explore possibilities.</p></article>
+        <article class="principle"><div class="num">06</div><h3>Collaboration</h3><p>Learning, connecting and building stronger creative futures together.</p></article>
+        <article class="principle"><div class="num">07</div><h3>Integrity</h3><p>Honest relationships, responsible decisions and respect for artists’ rights.</p></article>
+        <article class="principle"><div class="num">08</div><h3>Growth</h3><p>Potential beyond starting points, geography and industry expectations.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="founder" id="founder">
+    <div class="wrap founder-grid">
+      <div class="portrait"><img src="assets/elma-artist.jpg" alt="Elmelda Nyaboke Oiriga, founder of ELMERALD"></div>
+      <div class="founder-copy"><div class="kicker">The person behind the vision</div><h2 style="font:400 clamp(36px,4vw,54px)/1.15 Georgia,serif;margin:13px 0 22px">Built from an artist’s perspective.</h2>
+        <p>Elmelda Nyaboke Oiriga is the founder of ELMERALD and an independent pop artist known professionally as Elmá.</p>
+        <p>Her experience navigating the independent music journey inspired her to imagine a different kind of music company: one where artists are supported without being stripped of their individuality.</p>
+        <p>Through ELMERALD, she hopes to build more than a label. She wants to create room for other artists to discover their potential, express their creativity and build meaningful careers while remaining true to themselves.</p>
+        <p class="founder-name">Elmelda Nyaboke Oiriga</p><div class="role">Founder, ELMERALD</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="artists">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Our artists</div><h2>Individual stories.<br>Distinct creative identities.</h2><p>Our artists are more than names on a roster. They are individuals with different perspectives, sounds, experiences and ambitions. We celebrate the freedom to explore and create in an authentic way.</p></div>
+      <div class="artist-card">
+        <div class="artist-photo"><img src="assets/elma-artist.jpg" alt="Elmá, recording artist"></div>
+        <div class="artist-info"><div class="tag">Meet our first artist</div><h3>Elmá</h3><div class="tag">Recording artist · Pop</div>
+          <p>Elmá is an independent pop artist from Kenya and the first artist under ELMERALD. Driven by emotion, self-expression and authenticity, her music explores human experiences—from confidence and self-discovery to vulnerability and connection.</p>
+          <p>Her approach is centred on creating music people can relate to, feel and find pieces of themselves in. She continues to explore her sound, develop her identity and connect with listeners beyond geographical boundaries.</p>
+          <a class="btn primary" href="https://push.fm/fl/elma-music-" target="_blank" rel="noopener">Listen to Elmá</a>
+          <div class="socials"><a href="https://youtube.com/@elmaecho" target="_blank" rel="noopener">YouTube</a><a href="https://www.instagram.com/elma.echo" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/itselmaecho" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/@elmaecho" target="_blank" rel="noopener">TikTok</a><a href="https://x.com/itselmaecho" target="_blank" rel="noopener">X</a></div>
+        </div>
+      </div>
+      <p class="coming">More voices. More stories. More possibilities. Our journey of discovering and supporting creative talent continues.</p>
+    </div>
+  </section>
+
+  <section id="music" style="background:#091827">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Our music</div><h2>Every song has a story.</h2><p>Music is at the heart of ELMERALD. We believe it can communicate emotions, challenge perspectives and create connections that go beyond words. Explore music from our artists.</p></div>
+      <div class="music-grid">
+        <article class="music-card"><div class="type">Featured artist · Elmá</div><h3>Explore Elmá’s music</h3><p>Discover the songs, sounds and stories of ELMERALD’s first recording artist.</p><a href="https://push.fm/fl/elma-music-" target="_blank" rel="noopener">Explore artist music ↗</a></article>
+        <article class="music-card"><div class="type">Pop · Confidence</div><h3>BLACKOUT</h3><p>A pop record celebrating confidence, self-worth, self-love and the beauty of embracing who you are.</p><a href="https://push.fm/fl/cl9lglnb" target="_blank" rel="noopener">Listen to BLACKOUT ↗</a></article>
+        <article class="music-card"><div class="type">Pop · Emotion</div><h3>CRUEL WORLD</h3><p>An emotional pop record exploring vulnerability, despair, difficult realities and the hope of finding connection in a challenging world.</p><a href="https://push.fm/fl/cruel-world" target="_blank" rel="noopener">Listen to CRUEL WORLD ↗</a></article>
+      </div>
+      <p class="coming">Listen. Feel. Connect. Our catalogue is only the beginning—more music, more stories and more to come.</p>
+    </div>
+  </section>
+
+  <section id="updates">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">News & updates</div><h2>The journey is unfolding.</h2><p>Stay connected to the latest developments, announcements and milestones within the ELMERALD community.</p></div>
+      <div class="news-grid">
+        <article class="news-item"><div class="kicker">Latest news</div><h3>Company news & announcements</h3><p>Important developments, opportunities, company announcements and milestones.</p></article>
+        <article class="news-item"><div class="kicker">New music</div><h3>Music releases</h3><p>Upcoming releases, new music announcements and updates from our artists.</p></article>
+        <article class="news-item"><div class="kicker">Artist stories</div><h3>Artist spotlight</h3><p>Creative journeys, achievements and the individuals behind the music.</p></article>
+        <article class="news-item"><div class="kicker">Building together</div><h3>Collaborations & behind the journey</h3><p>Creative projects, partnerships, industry connections and moments behind the scenes.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="section-head"><div class="kicker">Connect with ELMERALD</div><h2>Let’s create possibilities.</h2><p>For enquiries, collaborations, partnerships and general information, get in touch with our team.</p></div>
+      <a class="contact-mail" href="mailto:elmeraldent@gmail.com">elmeraldent@gmail.com</a>
+      <div class="socials">
+        <a href="https://youtube.com/@elmerald_official" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.instagram.com/elmerald_official" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61595993319912" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://pin.it/6vKeSQgBV" target="_blank" rel="noopener">Pinterest</a>
+        <a href="https://www.tiktok.com/@elmerald5" target="_blank" rel="noopener">TikTok</a>
+      </div>
+      <div class="eyebrow">ELMERALD — Where individuality meets opportunity, and creativity has room to grow.</div>
+    </div>
+  </section>
+</main>
+<footer class="footer"><div class="wrap"><strong>ELMERALD</strong><span>© <span id="year">2026</span> ELMERALD. All rights reserved.</span><span>A home for artistic freedom. A space for possibilities.</span></div></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
